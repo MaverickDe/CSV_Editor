@@ -1,0 +1,156 @@
+button{
+    border:none;
+    outline:none;
+    background-color: rgba(2, 2, 110, 0.5);
+    padding:5px;
+    color:white
+    
+    
+}
+.workbook{
+    cursor: pointer;
+    height: 100%;
+}
+.workbookactive{
+    background-color: white;
+    color: blue;
+}
+
+
+*{
+    padding: 0px;
+    margin:0px
+}
+.nv{
+
+    color:rgb(77, 77, 224)
+}
+
+.rowtoolbar,.columntoolbar,.inputool{
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.inputool{
+    position: absolute;
+    left:5px;
+    top:-5px;
+    display: none;
+    z-index: 20;
+}
+.inputtoolbar{
+    display: none;
+    z-index: 20;
+
+}
+
+.inputool:hover>.inputtoolbar{
+    display: flex;
+
+}
+.input{
+    outline: none;
+    border: none;
+}
+.loader {
+    text-align: left;
+    width: 100px;
+    height: 3px;
+    /* font-size: large; */
+    
+}
+
+.loader>.bar {
+    width: 3px;
+    height: 100%;
+    background-color: red;
+    animation: roll 2s infinite 1s ease-in-out;
+    cursor: pointer;
+
+
+}
+@keyframes roll {
+
+    18% {
+
+        width: 100%
+    }
+
+    35% {
+        margin-left: auto;
+        margin-right: 0px;
+
+
+    }
+
+    55% {
+        width: 3px
+    }
+
+    70% {
+
+        width: 100%
+    }
+
+    870% {
+        margin-right: auto;
+        margin-left: 0px;
+
+    }
+
+    100% {
+        width: 3px
+    }
+
+
+
+}
+
+.loadercon{
+    display: none
+}
+.rowtoolbardiv{
+    display: none;
+            left:0px;
+            top:0px;
+            
+    
+            position: absolute;
+            z-index:30
+}
+
+.input:hover>.inputool{
+    display: block;
+}
+
+.columntoolbardiv{
+    display: none;
+}
+.rowtoolbar:hover>.rowtoolbardiv,.columntoolbar:hover>.columntoolbardiv{
+    display: flex;
+}
+
+.horizontal{
+  
+    cursor: ew-resize;
+    background-color: black;
+}
+.horizontal:hover{
+    width:2px;
+    background-color: black;
+}
+
+
+.con{
+    /* blue */
+    /* background-image: linear-gradient(10deg, rgb(88, 6, 6), rgb(75, 2, 75)); */
+    /* max-width: 1000px; */
+    /* width: 100%;
+    height: calc(100% - 100px); */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* color: white; */
+    /* position: relative; */
+
+}
